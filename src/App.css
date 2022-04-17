@@ -1,0 +1,27 @@
+
+a.login {
+  text-decoration: none;
+  color: #ffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+.login {
+  background-color: #1ed760;
+}
+.App {
+    padding: 100px;
+    width: 50%;
+    margin: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
