@@ -6,6 +6,11 @@ a.login {
   border-radius: 25px;
   font-family: 'Montserrat', sans-serif;
 }
+a.similar {
+  text-decoration: none;
+  color: #1ed760;
+  font-family: 'Montserrat', sans-serif;
+}
 .login {
   background-color: #1ed760;
 }
