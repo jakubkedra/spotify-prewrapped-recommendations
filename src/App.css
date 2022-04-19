@@ -5,8 +5,14 @@ a.login {
   padding: 10px 20px;
   border-radius: 25px;
   font-family: 'Montserrat', sans-serif;
+  margin: 55px;
 }
 a.similar {
+  text-decoration: none;
+  color: #1ed760;
+  font-family: 'Montserrat', sans-serif;
+}
+a.match {
   text-decoration: none;
   color: #1ed760;
   font-family: 'Montserrat', sans-serif;
@@ -30,3 +36,4 @@ a.similar {
   display: table;
   clear: both;
 }
+

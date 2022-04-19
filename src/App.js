@@ -51,7 +51,6 @@ function App() {
       }
     );
     setTopArtists(data.items);
-    console.log(topArtists);
   };
 
   const getUserTopTracks = async (event) => {

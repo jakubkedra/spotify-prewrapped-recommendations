@@ -40,38 +40,31 @@ export const Buttons = ({
     const response = await fetch(url);
     const data = await response.json();
     setSimilar(data.similartracks.track);
-    console.log(similar)
   }
   const displaySimilarTracks = () => {
     return similar.map((item) => (
-      <div>
-        {item.name} - {item.match}
+      <div key={item.match}>
+        {item.artist.name} - {item.name} - <a className="match">{item.match}</a>
       </div>
     ));
   };
   return (
     <div>
       <div className="row">
-        <div className="kolumna">
-          <a className="login" href="#" onClick={getUsersTopItems}>
+      <a className="login" href="#" onClick={getUsersTopItems}>
             Top Artists
           </a>
-        </div>
-        <br />
-        <div className="kolumna">
+        
           <a className="login" href="#" onClick={getUserTopTracks}>
             Top Tracks
           </a>
-        </div>
-        <br />
-        <div className="kolumna">
+        
           <a className="login" href="#" onClick={logout}>
             Log out
           </a>
-        </div>
-        <br />
+        
       </div>
-      <br />
+      <br /><br /><br />
       <div className="row">
         <div className="column">{displayTopArtists()}</div>
         <div className="column">{displayTopTracks()}</div>
